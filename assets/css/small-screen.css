@@ -1,0 +1,57 @@
+/* menu toggler */
+
+@media only screen and (max-width: 576px) {
+    .nav-item {
+        font-size: 25px;
+    }
+
+    .navbar-nav {
+        padding-top: 20%;
+
+    }
+
+
+    /* glitch off */
+
+    .nav-link::before,
+    .nav-link::after {
+        content: none;
+        left: 0;
+        right: 0;
+        color: white;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        margin: 0 auto;
+        text-shadow: none;
+    }
+
+    .nav-item {
+        width: 90%;
+    }
+
+    .nav-item:hover {
+        background: #f14b35;
+        width: 90%;
+    }
+
+    .nav-link:hover {
+        color: #fff;
+    }
+
+    /* icon */
+    .icon {
+        margin-top: 20%;
+    }
+
+    .icon a:hover .fa-facebook-f,
+    .icon a:hover .fa-twitter,
+    .icon a:hover .fa-instagram,
+    .icon a:hover .fa-linkedin-in {
+        transform: none;
+    }
+
+
+}
+
+/* /menu toggler */

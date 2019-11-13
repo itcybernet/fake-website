@@ -1,0 +1,26 @@
+.navbar-collapse {
+    flex-grow: unset;
+}
+
+.user,
+.bag {
+    font-size: 25px !important;
+    padding-right: 14px;
+}
+
+.form-control {
+    border: 1px solid;
+    border-radius: 0;
+}
+
+
+.form-control:focus {
+    box-shadow: none;
+    border: 1px solid !important;
+}
+
+.search {
+    position: absolute;
+    right: 0;
+    transform: translateX(-2rem);
+}
