@@ -1,20 +1,27 @@
-// $(function () {
+// let time = 2500;
+// let index = 0;
 
-//     $(".toggle").click(function () {
-//         $(".toggle").toggleClass("active");
-//         $(".collapse").toggleClass("collaps");
-//     });
+// slide();
 
-// });
+// function slide() {
+//     let i;
+//     let carousel = document.getElementsByClassName("carousel-item");
+//     for (i = 0; i < carousel.length; i++) {
+//         carousel[i].style.display = "none";
+//     }
+//     index++;
+//     if (index > carousel.length) {
+//         index = 1;
+//     }
+//     carousel[index - 1].style.display = "block";
+//     setTimeout(slide, time);
 
-const menu = document.querySelector("#toggle");
-const menuCollapse = document.querySelector(".collapse");
+// }
 
-function toggler() {
-    menu.addEventListener("click", function () {
-        menu.classList.toggle("active");
-        menuCollapse.classList.toggle("collaps");
 
-    });
-};
-toggler();
+$(document).ready(function () {
+    $('.carousel').carousel({
+        interval: 3000
+    })
+
+})
