@@ -83,8 +83,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <div class="brand-title">
-                    <h2 class="title">brand kami</h2>
+                <div class="title">
+                    <h2>brand kami</h2>
                 </div>
             </div>
             <div class="col-lg-2">
@@ -127,6 +127,65 @@
     </div>
 
     <!-- produk -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title">
+                    <h2>PRODUK</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 mt-3">
+                <div class="prod">
+                    <div class="animate">
+                    </div>
+                    <h3><a href="#" class="link">PRIA</a></h3>
+                    <img src="assets/image/pria.jpg" class="produk" alt="men">
+                </div>
+            </div>
+            <div class="col-lg-4 mt-3">
+                <div class="prod">
+                    <div class="animate">
+                    </div>
+                    <h3><a href="#" class="link">PRIA</a></h3>
+                    <img src="assets/image/pria.jpg" class="produk" alt="men">
+                </div>
+            </div>
+            <div class="col-lg-4 mt-3">
+                <div class="prod">
+                    <div class="animate">
+                    </div>
+                    <h3><a href="#" class="link">PRIA</a></h3>
+                    <img src="assets/image/pria.jpg" class="produk" alt="men">
+                </div>
+            </div>
+            <div class="col-lg-4 mt-3">
+                <div class="prod">
+                    <div class="animate">
+                    </div>
+                    <h3><a href="#" class="link">PRIA</a></h3>
+                    <img src="assets/image/pria.jpg" class="produk" alt="men">
+                </div>
+            </div>
+            <div class="col-lg-4 mt-3">
+                <div class="prod">
+                    <div class="animate">
+                    </div>
+                    <h3><a href="#" class="link">PRIA</a></h3>
+                    <img src="assets/image/pria.jpg" class="produk" alt="men">
+                </div>
+            </div>
+            <div class="col-lg-4 mt-3">
+                <div class="prod">
+                    <div class="animate">
+                    </div>
+                    <h3><a href="#" class="link">PRIA</a></h3>
+                    <img src="assets/image/pria.jpg" class="produk" alt="men">
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="assets/js/jquery-3.3.1.slim.min.js"></script>

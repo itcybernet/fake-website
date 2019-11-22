@@ -24,4 +24,15 @@ $(document).ready(function () {
         interval: 3000
     })
 
+    let prod = document.getElementsByClassName('prod');
+    for (i = 0; i < prod.length; i++) {
+        $(prod[i]).mouseover(function () {
+            $('.prod h3').show()
+        })
+        $('.prod').mouseout(function () {
+            $('.prod h3').hide().fadeOut("slow")
+        })
+    }
+
+
 })

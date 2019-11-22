@@ -34,9 +34,9 @@
     transition: 1s;
 }
 
-.brand-title {
+.title {
     position: relative;
-    margin-top: 3rem;
+    margin-top: 5rem;
     text-transform: uppercase;
     width: 15rem;
     height: 3rem;
@@ -48,7 +48,7 @@
 
 }
 
-.title::before {
+.title h2::before {
     content: "";
     position: absolute;
     width: calc(100% + 6px);
@@ -64,4 +64,69 @@
     width: 120px;
     height: 50px;
     margin-top: 3rem;
+}
+
+
+
+.produk,
+.prod {
+    width: 18rem;
+    height: 25rem;
+}
+
+.link,
+.link:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* slide bg */
+.animate {
+    position: absolute;
+    width: 18rem;
+    height: 25rem;
+}
+
+.animate::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 0%;
+    background: rgba(255, 46, 46, 0.8);
+    transition: .5s;
+}
+
+.animate::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 0%;
+    background: rgba(255, 46, 46, 0.8);
+    transition: .5s;
+}
+
+.prod:hover .animate::before,
+.prod:hover .animate::after {
+    height: 100%;
+}
+
+/* title */
+.prod h3 {
+    position: absolute;
+    color: #fff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4rem;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    transform: translate(0, 40%);
+    display: none;
+    transition: .5s;
 }
