@@ -22,17 +22,13 @@
 $(document).ready(function () {
     $('.carousel').carousel({
         interval: 3000
-    })
+    });
 
-    let prod = document.getElementsByClassName('prod');
-    for (i = 0; i < prod.length; i++) {
-        $(prod[i]).mouseover(function () {
-            $('.prod h3').show()
+
+    $('.link-produk').mouseenter(function () {
+            $(this).addClass('active');
         })
-        $('.prod').mouseout(function () {
-            $('.prod h3').hide().fadeOut("slow")
-        })
-    }
-
-
-})
+        .mouseleave(function () {
+            $(this).removeClass('active');
+        });
+});
