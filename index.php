@@ -27,50 +27,65 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
             <!-- burger -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!-- menu -->
-            <div class="col-md-4 ">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item ">
-                            <a class="nav-link" href="#">PRIA</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">WANITA</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">ANAK-ANAK</a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="col-lg-4">
+                <ul class="navbar-nav mr-auto menu-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">PRIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">WANITA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ANAK-ANAK</a>
+                    </li>
+                </ul>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-lg-4  logo-mob">
                 <a href="#" class="logo"><span class=" d-block ml-2">FASHION</span></a>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-lg-4 search-mob">
                 <form class="form-inline">
-                    <a href="#">
-                        <i class="fa fa-user user"></i>
-                    </a>
-                    <a href="#">
-                        <I class="fa fa-shopping-bag bag"></I>
-                    </a>
-
+                    <div class="nav-icon">
+                        <a href="#">
+                            <i class="fa fa-user user"></i>
+                        </a>
+                        <a href="#">
+                            <I class="fa fa-shopping-bag bag"></I>
+                        </a>
+                    </div>
 
                     <input class="form-control " type="search" placeholder="Cari Barangmu Disini..."
                         aria-label="Search"><i class="fa fa-search search"></i>
-                </form>
+            </div>
+            </form>
+
+
+            <!-- menu -->
+            <div class="menu-mob" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">PRIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">WANITA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ANAK-ANAK</a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </div>
 
     <!-- slider  -->
-    <div class="container-fluid p-0">
+    <div class="container-fluid p-0 ">
         <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
@@ -92,9 +107,9 @@
     </div>
 
     <!-- brand -->
-    <div class="container">
+    <div class="container p-0 m-0-mob">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-sm-12">
                 <div class="title">
                     <h2>brand kami</h2>
                 </div>
@@ -105,7 +120,7 @@
 
             for ($i=0; $i < count($img) ; $i++) { ?>
 
-            <div class="col-lg-2 col-md-3 col-sm-4">
+            <div class="col-lg-2 col-md-3 col-sm-4 hidden">
 
                 <img src="assets/image/brand/<?= $img[$i]; ?>" alt="" class="brand">
             </div>
@@ -118,7 +133,7 @@
 
 
     <!-- produk -->
-    <div class="container">
+    <div class="container mt-5">
         <div class="row">
             <div class="col-lg-12">
                 <div class="title">
@@ -159,36 +174,38 @@
         }
 
 ?>
+        </div>
+    </div>
 
-            <!-- info -->
-            <div class="container text-justify info">
-                <div class="row  mg-top ">
-                    <div class="col-lg-12 text-center">
-                        <h4>Lorem ipsum dolor sit amet.</h4>
-                    </div>
-                    <div class="col-lg-12">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo rerum aperiam ex eligendi
-                            commodi itaque amet molestiae quae, iusto cupiditate incidunt magnam blanditiis sapiente.
-                            Aperiam earum recusandae, impedit unde dolorem, quo pariatur quas, molestias doloremque
+    <!-- info -->
+    <div class="container text-justify info">
+        <div class="row  mg-top ">
+            <div class="col-lg-12 text-center">
+                <h4 class="text-uppercase">Lorem ipsum dolor sit amet.</h4>
+            </div>
+            <div class="col-lg-12">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo rerum aperiam ex eligendi
+                    commodi itaque amet molestiae quae, iusto cupiditate incidunt magnam blanditiis sapiente.
+                    Aperiam earum recusandae, impedit unde dolorem, quo pariatur quas, molestias doloremque
 
-                            <b> nobis corporis error accusamus iste ipsum.</b> Commodi nobis minima tempore nesciunt
-                            magni
-                            quaerat molestias, atque vel quasi odio cumque fugiat odit eaque dolore ratione eius
-                            doloribus ut at, ipsa placeat adipisci laboriosam. Non quam numquam eius, exercitationem
-                            eaque consequatur expedita harum ipsum deserunt libero aperiam, accusantium provident
-                            blanditiis quasi tempora! Iste minus, nostrum qui ut nemo, quidem, id possimus aliquam
-                            voluptatem dolorum deleniti iusto doloribus.</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse nam veritatis, <cite> nobis
-                                dolorem delectus!</cite> Eaque consequatur voluptatum autem qui maxime dignissimos
-                            eveniet. Modi, provident praesentium? Ea aspernatur neque quibusdam. Nihil beatae dolores
-                            provident vel, fuga animi vero culpa modi quam maxime laboriosam corrupti deleniti earum
-                            eligendi. Eum, tempora deserunt?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem obcaecati quidem
-                            explicabo corporis? Aspernatur quas voluptatem magnam tempore quam maiores.</p>
-                    </div>
-                </div>
+                    <b> nobis corporis error accusamus iste ipsum.</b> Commodi nobis minima tempore nesciunt
+                    magni
+                    quaerat molestias, atque vel quasi odio cumque fugiat odit eaque dolore ratione eius
+                    doloribus ut at, ipsa placeat adipisci laboriosam. Non quam numquam eius, exercitationem
+                    eaque consequatur expedita harum ipsum deserunt libero aperiam, accusantium provident
+                    blanditiis quasi tempora! Iste minus, nostrum qui ut nemo, quidem, id possimus aliquam
+                    voluptatem dolorum deleniti iusto doloribus.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse nam veritatis, <cite> nobis
+                        dolorem delectus!</cite> Eaque consequatur voluptatum autem qui maxime dignissimos
+                    eveniet. Modi, provident praesentium? Ea aspernatur neque quibusdam. Nihil beatae dolores
+                    provident vel, fuga animi vero culpa modi quam maxime laboriosam corrupti deleniti earum
+                    eligendi. Eum, tempora deserunt?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem obcaecati quidem
+                    explicabo corporis? Aspernatur quas voluptatem magnam tempore quam maiores.</p>
             </div>
         </div>
+    </div>
+    </div>
     </div>
 
 

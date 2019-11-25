@@ -59,6 +59,14 @@ html {
     color: #464646;
 }
 
+.menu-mob {
+    display: none;
+}
+
+.toggle {
+    display: block !important;
+}
+
 /* carousel */
 .carousel-inner {
     width: 100%;
@@ -101,6 +109,17 @@ html {
     margin-top: 3rem;
 }
 
+.hidden {
+    opacity: 0;
+    transition: .8s;
+    transform: translateY(30px);
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+
+}
 
 /* produk */
 
